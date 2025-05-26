@@ -1,0 +1,117 @@
+/* Google Fonts - Open Sans yazı tipi içe aktarılıyor */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Renk ve kenarlık değişkenleri tanımlanıyor */
+:root {
+    --main-color: #000000; 
+    --black-color: #747474; 
+    --border: 0.1rem solid rgba(255, 255, 255, 0.4); 
+}
+
+/* Tüm elemanlara genel reset ve varsayılan stil */
+* {
+    font-family: "Open Sans", sans-serif; 
+    margin: 0;                            
+    padding: 0;                           
+    box-sizing: border-box;             
+    outline: none;                       
+    border: none;                       
+    text-decoration: none;               
+    text-transform: capitalize;          
+    transition: 0.2s ease;               
+}
+
+/*! base html codes */
+html {
+    font-size: 62.5%;                    /* 1rem = 10px (uygun oranlama) */
+    overflow-x: hidden;                  
+    scroll-padding-top: 9rem;            
+    scroll-behavior: smooth;             
+}
+
+/*! header start */
+
+.header .logo img {
+    height: 30rem;
+}
+
+/* header yapısı */
+.header {
+    background-color: #ffffff50;         
+    display: flex;                       
+    align-items: center;                
+    justify-content: space-between;    
+    padding: 0 7%;                      
+    margin: 2rem 7%;                     
+    height: 17vh;                        
+    border-radius: 13rem;               
+    position: relative;                
+    z-index: 10;                        
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.747); 
+}
+
+/* Navbar */
+.header .navbar a {
+    margin: 0 1rem;                     
+    font-size: 3rem;                     
+    font-weight: 650;                    
+    color: #000000;                      
+    border-bottom: 0.2rem solid transparent; 
+}
+
+/* Navbar efekti */
+.header .navbar a:hover {
+    border-color: var(--main-color);     
+    padding-bottom: 0.01rem;             
+}
+
+/* Header içindeki butonlar */
+.header .buttons button {
+    cursor: pointer;
+    font-size: 2.25rem;                  
+    margin-left: 1.25rem;                
+    background-color: transparent;
+    color: #000000;                      
+}
+
+/*! header end */
+
+/*! home start */
+
+/* Ana sayfa yüksekliği tüm ekran */
+.home {
+    min-height: 100vh;
+}
+
+/* Home içeriği sınırlandır */
+.home .content {
+    max-width: 100rem;
+}
+
+/* Ana başlık */
+.home .content h3 {
+    font-size: 7rem;
+    padding: 0 10%;                      
+    color: #ffffff;                      
+}
+
+.home .content p {
+    font-size: 2.4rem;
+    padding: 0 10%;                      
+    color: #ffffff;                      
+}
+/*! home end */
+
+/* Buton grubu stil ayarı */
+.buttons {
+    display: flex;                       
+    align-items: center;
+}
+
+.buttons button {
+    background: none;                  
+    border: none;                       
+    cursor: pointer;                    
+    font-size: 1.4rem;                  
+    margin-left: 10px;                 
+}
